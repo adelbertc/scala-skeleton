@@ -6,7 +6,7 @@ description := "cool stuff.. hopefully"
 
 version := "0.0.1"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.10.2"
 
 licenses += ("BSD-3-Clause", url("http://www.opensource.org/licenses/BSD-3-Clause"))
 
