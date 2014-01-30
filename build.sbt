@@ -19,6 +19,8 @@ libraryDependencies ++= Seq(
   "org.scalaz"  %% "scalaz-effect"  % "7.0.5"
 )
 
+scalacOptions in (Compile, compile) += "-P:wartremover:traverser:org.brianmckenna.wartremover.warts.Unsafe"
+
 scalacOptions ++= Seq(
   "-deprecation", 
   "-encoding", "UTF-8",
@@ -31,6 +33,5 @@ scalacOptions ++= Seq(
   "-Ywarn-all",
   "-Ywarn-dead-code",
   "-Ywarn-numeric-widen",
-  "-Ywarn-value-discard",
-  "-P:wartremover:traverser:org.brianmckenna.wartremover.warts.Unsafe"
+  "-Ywarn-value-discard"
 )
