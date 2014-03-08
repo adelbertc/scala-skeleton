@@ -15,8 +15,8 @@ resolvers += Resolver.sonatypeRepo("releases")
 addCompilerPlugin("org.brianmckenna" %% "wartremover" % "0.7")
 
 libraryDependencies ++= Seq(
-  "org.scalaz"  %% "scalaz-core"    % "7.0.5",
-  "org.scalaz"  %% "scalaz-effect"  % "7.0.5"
+  "org.scalaz"  %% "scalaz-core"    % "7.0.6",
+  "org.scalaz"  %% "scalaz-effect"  % "7.0.6"
 )
 
 scalacOptions in (Compile, compile) += "-P:wartremover:traverser:org.brianmckenna.wartremover.warts.Unsafe"
