@@ -12,7 +12,7 @@ licenses += ("BSD-3-Clause", url("http://www.opensource.org/licenses/BSD-3-Claus
 
 resolvers += Resolver.sonatypeRepo("releases")
 
-addCompilerPlugin("org.brianmckenna" %% "wartremover" % "0.7")
+addCompilerPlugin("org.brianmckenna" %% "wartremover" % "0.8")
 
 libraryDependencies ++= Seq(
   "org.scalaz"  %% "scalaz-core"    % "7.0.6",
