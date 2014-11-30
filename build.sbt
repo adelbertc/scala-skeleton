@@ -10,16 +10,13 @@ scalaVersion := "2.10.4"
 
 licenses += ("BSD-3-Clause", url("http://www.opensource.org/licenses/BSD-3-Clause"))
 
-resolvers += Resolver.sonatypeRepo("releases")
-
-addCompilerPlugin("org.brianmckenna" %% "wartremover" % "0.8")
+val scalazVersion = "7.1.0"
 
 libraryDependencies ++= Seq(
-  "org.scalaz"  %% "scalaz-core"    % "7.0.6",
-  "org.scalaz"  %% "scalaz-effect"  % "7.0.6"
+  "org.scalaz"  %% "scalaz-concurrent"  % scalazVersion,
+  "org.scalaz"  %% "scalaz-core"        % scalazVersion,
+  "org.scalaz"  %% "scalaz-effect"      % scalazVersion
 )
-
-scalacOptions in (Compile, compile) += "-P:wartremover:traverser:org.brianmckenna.wartremover.warts.Unsafe"
 
 scalacOptions ++= Seq(
   "-deprecation", 
