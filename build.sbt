@@ -8,7 +8,7 @@ version := "0.0.1"
 
 scalaVersion := "2.10.4"
 
-licenses += ("BSD-3-Clause", url("http://www.opensource.org/licenses/BSD-3-Clause"))
+licenses += ("BSD-2-Clause", url("http://www.opensource.org/licenses/BSD-2-Clause"))
 
 val scalazVersion = "7.1.0"
 
@@ -19,9 +19,9 @@ libraryDependencies ++= Seq(
 )
 
 scalacOptions ++= Seq(
-  "-deprecation", 
+  "-deprecation",
   "-encoding", "UTF-8",
-  "-feature", 
+  "-feature",
   "-language:existentials",
   "-language:higherKinds",
   "-language:implicitConversions",
